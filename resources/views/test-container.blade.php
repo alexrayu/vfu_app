@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Oleksii Raiu - Blade and Twig comparison.</title>
       <link rel="stylesheet" media="all" href="/css/app.css" />
+      <script src="{{ mix('js/hljs.js') }}" defer></script>
     </head>
 
     <body>
@@ -13,11 +14,19 @@
       <p>This is a list of tested items. All samples run in a loop of 1 mln iterations.</p>
 
       <section>
-        <h2>1.4.1 Variables. Assigning, printing.</h2>
-        <h3>Blade:</h3>
-        <ol>
-          <li><a href="/blade/variable-assign">Create a variable</a></li>
-        </ol>
+        <h2>{{ $title }}</h2>
+        <h3>Code:</h3>
+        <code class="language-blade">
+          {{ $code_tpl }}
+        </code>
+        <h3>Compiled PHP:</h3>
+        <code class="language-php">
+          {{ $code_php }}
+        </code>
+        <h3>Statistics:</h3>
+        <code class="language-plaintext">
+          {{ $stats }}
+        </code>
       </section>
 
     </main>
