@@ -24,7 +24,7 @@ Route::get('/blade/variable-assign', function () {
   for ($i = 0; $i < 999; $i++) {
     Blade::compileString($data['blade']['tpl']);
   }
-  $data['blade']['ms'] = (microtime(TRUE) - $time) / 1000;
+  $data['blade']['ms'] = round((microtime(TRUE) - $time) * 1000, 2);
 
   // Twig.
   $time = microtime(TRUE);
@@ -37,7 +37,7 @@ Route::get('/blade/variable-assign', function () {
   for ($i = 0; $i < 999; $i++) {
     $env->compileSource($src);
   }
-  $data['twig']['ms'] = (microtime(TRUE) - $time) / 1000;
+  $data['twig']['ms'] = round((microtime(TRUE) - $time) * 1000, 2);
 
   return view('test-container', $data);
 });
