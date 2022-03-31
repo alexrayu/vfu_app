@@ -6,10 +6,23 @@ html, body {
   background: #fff;
 }
 .container {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 2em auto;
 }
 section {
   margin-top: 4em;
 }
-
+table.compare {
+  position: relative;
+  th, td {
+    padding: 1em;
+    margin: 2px;
+  }
+  td.val {
+    background: #f0f0f0;
+    width: 40%;
+    code.hljs {
+      background: transparent;
+    }
+  }
+}

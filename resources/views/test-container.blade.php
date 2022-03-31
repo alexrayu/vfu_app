@@ -15,18 +15,25 @@
 
       <section>
         <h2>{{ $title }}</h2>
-        <h3>Code:</h3>
-        <code class="language-blade">
-          {{ $code_tpl }}
-        </code>
-        <h3>Compiled PHP:</h3>
-        <code class="language-php">
-          {{ $code_php }}
-        </code>
-        <h3>Statistics:</h3>
-        <code class="language-plaintext">
-          {{ $stats }}
-        </code>
+
+        <table class="compare">
+          <tr>
+            <th></th>
+            <th class="code">Blade</th>
+            <th class="code">Twig</th>
+          </tr>
+          <tr>
+            <td>Code</td>
+            <td class="val"><code class="language-blade">{{ $blade['tpl'] }}</code></td>
+            <td class="val"><code class="language-twig">{{ $twig['tpl'] }}</code></td>
+          </tr>
+          <tr>
+            <td>Compiled PHP</td>
+            <td class="val"><code class="language-php">{{ $blade['php'] }}</code></td>
+            <td class="val"><code class="language-php">{{ $twig['php'] }}</code></td>
+          </tr>
+        </table>
+
       </section>
 
     </main>
