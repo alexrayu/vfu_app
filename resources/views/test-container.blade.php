@@ -33,9 +33,19 @@
             <td class="val"><code class="language-php">{{ $twig['php'] }}</code></td>
           </tr>
           <tr>
-            <td>Performance</td>
-            <td class="val">{{ $blade['ms'] }} ms</td>
-            <td class="val">{{ $twig['ms'] }} ms</td>
+            <td>Result HTML</td>
+            <td class="val"><code class="language-html">{{ $blade['html'] }}</code></td>
+            <td class="val"><code class="language-html">{{ $twig['html'] }}</code></td>
+          </tr>
+          <tr>
+            <td>Compile Speed, ms (1000 loops)</td>
+            <td class="val">{{ $blade['compile_ms'] }} ms</td>
+            <td class="val">{{ $twig['compile_ms'] }} ms</td>
+          </tr>
+          <tr>
+            <td>Render Speed, ms (1000 loops)</td>
+            <td class="val">{{ $blade['render_ms'] }} ms</td>
+            <td class="val">{{ $twig['render_ms'] }} ms</td>
           </tr>
         </table>
 

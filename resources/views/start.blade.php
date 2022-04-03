@@ -18,7 +18,6 @@
         <ol>
           <li><a href="/blade/variable-assign">Create a variable</a></li>
         </ol>
-        {{ $time }}
       </section>
 
     </main>
