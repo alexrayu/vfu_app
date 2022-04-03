@@ -38,14 +38,9 @@
             <td class="val"><code class="language-html">{{ $twig['html'] }}</code></td>
           </tr>
           <tr>
-            <td>Compile Speed, ms (1000 loops)</td>
-            <td class="val">{{ $blade['compile_ms'] }} ms</td>
-            <td class="val">{{ $twig['compile_ms'] }} ms</td>
-          </tr>
-          <tr>
-            <td>Render Speed, ms (1000 loops)</td>
-            <td class="val">{{ $blade['render_ms'] }} ms</td>
-            <td class="val">{{ $twig['render_ms'] }} ms</td>
+            <td>Total Speed, ms (1000 loops)</td>
+            <td class="val">{{ $blade['compile_ms'] + $blade['render_ms'] }} ms <br /> ({{ $blade['compile_ms'] }} ms compile, {{ $blade['render_ms'] }} ms render)</td>
+            <td class="val">{{ $twig['compile_ms'] + $twig['render_ms'] }} ms <br /> ({{ $twig['compile_ms'] }} ms compile, {{ $twig['render_ms'] }} ms render)</td>
           </tr>
         </table>
 
