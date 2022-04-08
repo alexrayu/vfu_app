@@ -22,6 +22,7 @@ class Renderer {
    *   Operation result.
    */
   public static function renderItem($name) {
+    $iterations = 999;
     $data = [
       'blade' => [],
       'twig' => [],
@@ -33,12 +34,12 @@ class Renderer {
     $data['blade']['php'] = Blade::compileString($data['blade']['tpl']);
     $data['blade']['html'] = Blade::render($data['blade']['php']);
     $time = microtime(TRUE);
-    for ($i = 0; $i < 999; $i++) {
+    for ($i = 0; $i < $iterations; $i++) {
       Blade::compileString($data['blade']['tpl']);
     }
     $data['blade']['compile_ms'] = round((microtime(TRUE) - $time) * 1000, 2);
     $time = microtime(TRUE);
-    for ($i = 0; $i < 999; $i++) {
+    for ($i = 0; $i < $iterations; $i++) {
       Blade::render($data['blade']['php']);
     }
     $data['blade']['render_ms'] = round((microtime(TRUE) - $time) * 1000, 2);
@@ -53,12 +54,12 @@ class Renderer {
     $data['twig']['php'] = $env->compileSource($src);
     $data['twig']['html'] = $env->render($twig_name);
     $time = microtime(TRUE);
-    for ($i = 0; $i < 999; $i++) {
+    for ($i = 0; $i < $iterations; $i++) {
       $env->compileSource($src);
     }
     $data['twig']['compile_ms'] = round((microtime(TRUE) - $time) * 1000, 2);
     $time = microtime(TRUE);
-    for ($i = 0; $i < 999; $i++) {
+    for ($i = 0; $i < $iterations; $i++) {
       $env->render($twig_name);
     }
     $data['twig']['render_ms'] = round((microtime(TRUE) - $time) * 1000, 2);

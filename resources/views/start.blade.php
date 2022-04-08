@@ -10,14 +10,12 @@
     <body>
     <main class="container">
       <h1>Oleksii Raiu - Blade and Twig comparison.</h1>
-      <p>This is a list of tested items. All samples run in a loop of 1 mln iterations.</p>
+      <p>This is a list of tested items. All samples run in a loop of 1000 iterations.</p>
 
       <section>
-        <h2>1.4.1 Variables. Assigning, printing.</h2>
-        <h3>Blade:</h3>
-        <ol>
-          <li><a href="/blade/variable-assign">Create a variable</a></li>
-        </ol>
+        <ul>
+          <li><a href="/blade/variable-assign">1.4.1 Variables. Assigning, printing.</a></li>
+        </ul>
       </section>
 
     </main>

@@ -1,1 +1,2 @@
-{{ 'hello' }}
+@php($name = "Oleksii")
+Hello, {{ $name }}
