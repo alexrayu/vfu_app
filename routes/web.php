@@ -8,7 +8,8 @@ Route::get('/', function () {
 });
 
 Route::get('/blade/variable-assign', function () {
-  $data = Renderer::renderItem('var-assign');
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('var-assign');
   $data['title'] = '1.4.1 Variables. Assigning, Printing.';
 
   return view('test-container', $data);
