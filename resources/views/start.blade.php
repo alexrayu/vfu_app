@@ -17,6 +17,7 @@
           <li><a href="/variable-assign">Create and write simple and complex variables</a></li>
           <li><a href="/logic">Flexible rendering logic</a></li>
           <li><a href="/control">Flexible control structures</a></li>
+          <li><a href="/inheritance">Vertical and horizontal inheritance</a></li>
         </ol>
       </section>
 

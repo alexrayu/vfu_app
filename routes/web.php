@@ -30,3 +30,13 @@ Route::get('/control', function () {
   $data['title'] = '3. Flexible control structures.';
   return view('test-container', $data);
 });
+
+// 4. Vertical and horizontal inheritance.
+Route::get('/inheritance', function () {
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('inheritance');
+  $data['title'] = '4. Vertical and horizontal inheritance.';
+  return view('test-container', $data);
+});
+
+
