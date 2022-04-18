@@ -4,6 +4,7 @@ html, body {
   font-family: sans-serif;
   min-height: 100%;
   background: #fff;
+  font-size: 14px;
 }
 .container {
   max-width: 1024px;
@@ -23,6 +24,7 @@ table.compare {
     width: 40%;
     code.hljs {
       background: transparent;
+      font-size: 12px;
     }
   }
 }
