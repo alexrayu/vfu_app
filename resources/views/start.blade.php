@@ -21,6 +21,7 @@
         <li><a href="/security">Security</a></li>
         <li><a href="/stability">Stability</a></li>
         <li><a href="/context">Context</a></li>
+        <li><a href="/extendability">Extendability</a></li>
       </ol>
     </section>
 

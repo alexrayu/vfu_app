@@ -62,3 +62,11 @@ Route::get('/context', function () {
   $data['title'] = '7. Context.';
   return view('test-container', $data);
 });
+
+// 8. Extendability.
+Route::get('/extendability', function () {
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('extendability', TRUE);
+  $data['title'] = '8. Extendability.';
+  return view('test-container', $data);
+});
