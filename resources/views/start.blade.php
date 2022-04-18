@@ -13,9 +13,9 @@
       <p>This is a list of tested items. All samples run in a loop of 1000 iterations.</p>
 
       <section>
-        <ul>
-          <li><a href="/blade/variable-assign">1.4.1 Variables. Assigning, printing.</a></li>
-        </ul>
+        <ol>
+          <li><a href="/blade/variable-assign">Create and write simple and complex variables</a></li>
+        </ol>
       </section>
 
     </main>

@@ -42,6 +42,11 @@
             <td class="val">{{ $blade['compile_ms'] + $blade['render_ms'] }} ms <br /> ({{ $blade['compile_ms'] }} ms compile, {{ $blade['render_ms'] }} ms render)</td>
             <td class="val">{{ $twig['compile_ms'] + $twig['render_ms'] }} ms <br /> ({{ $twig['compile_ms'] }} ms compile, {{ $twig['render_ms'] }} ms render)</td>
           </tr>
+          <tr>
+            <td>Perf</td>
+            <td class="val">{{ $blade['perf_delta'] }}</td>
+            <td class="val">{{ $twig['perf_delta'] }}</td>
+          </tr>
         </table>
 
       </section>

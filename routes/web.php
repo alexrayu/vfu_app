@@ -10,7 +10,7 @@ Route::get('/', function () {
 Route::get('/blade/variable-assign', function () {
   $renderer = new Renderer();
   $data = $renderer->renderItem('var-assign');
-  $data['title'] = '1.4.1 Variables. Assigning, Printing.';
+  $data['title'] = '1 Create and write simple and complex variables.';
 
   return view('test-container', $data);
 });
