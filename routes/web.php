@@ -39,4 +39,10 @@ Route::get('/inheritance', function () {
   return view('test-container', $data);
 });
 
-
+// 5. Security.
+Route::get('/security', function () {
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('security');
+  $data['title'] = '5. Security.';
+  return view('test-container', $data);
+});
