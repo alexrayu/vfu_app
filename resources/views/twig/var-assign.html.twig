@@ -1,2 +1,8 @@
-{% set name = 'Oleksii' %}
+{% set name = 'John' %}
 Hello, {{ name }}
+{% set user = {'name': name} %}
+Array name: {{ user.name }}
+Array dot notation name: {{ user.name }}
+
+{# Twig can print objects, but not create objects. #}
+{# Array printed twice to for performance adjustment. #}
