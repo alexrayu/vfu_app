@@ -1,0 +1,20 @@
+{% set test = 5 %}
+
+{# If conditional. #}
+{% if test == 5 %}
+  Test has value of 5.
+{% elseif test < 5 %}
+  Test is smaller than 5.
+{% else %}
+  Test is greater than 5.
+{% endif %}
+
+{# Symfony does not support "switch". #}
+{# An "if" implementation has been placed for performance testing. #}
+{% if test == 5 %}
+  Test has value of 5.
+{% elseif test < 5 %}
+  Test is smaller than 5.
+{% else %}
+  Test is greater than 5.
+{% endif %}

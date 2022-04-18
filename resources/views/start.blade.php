@@ -14,7 +14,9 @@
 
       <section>
         <ol>
-          <li><a href="/blade/variable-assign">Create and write simple and complex variables</a></li>
+          <li><a href="/variable-assign">Create and write simple and complex variables</a></li>
+          <li><a href="/logic">Flexible rendering logic</a></li>
+          <li><a href="/control">Flexible control structures</a></li>
         </ol>
       </section>
 
