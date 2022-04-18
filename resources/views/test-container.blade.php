@@ -24,18 +24,18 @@
           </tr>
           <tr>
             <td>Code</td>
-            <td class="val"><code class="language-blade">{{ $blade['tpl'] }}</code></td>
-            <td class="val"><code class="language-twig">{{ $twig['tpl'] }}</code></td>
+            <td class="val"><pre><code class="language-blade">{{ $blade['tpl'] }}</code></pre></td>
+            <td class="val"><pre><code class="language-twig">{{ $twig['tpl'] }}</code></pre></td>
           </tr>
           <tr>
             <td>Compiled PHP</td>
-            <td class="val"><code class="language-php">{{ $blade['php'] }}</code></td>
-            <td class="val"><code class="language-php">{{ $twig['php'] }}</code></td>
+            <td class="val"><pre><code class="language-php">{{ $blade['php'] }}</code></pre></td>
+            <td class="val"><pre><code class="language-php">{{ $twig['php'] }}</code></pre></td>
           </tr>
           <tr>
             <td>Result HTML</td>
-            <td class="val"><code class="language-html">{{ $blade['html'] }}</code></td>
-            <td class="val"><code class="language-html">{{ $twig['html'] }}</code></td>
+            <td class="val"><pre><code class="language-html">{{ $blade['html'] }}</code></pre></td>
+            <td class="val"><pre><code class="language-html">{{ $twig['html'] }}</code></pre></td>
           </tr>
           <tr>
             <td>Total Speed, ms (1000 loops)</td>
