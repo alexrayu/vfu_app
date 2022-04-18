@@ -20,6 +20,7 @@
         <li><a href="/inheritance">Vertical and horizontal inheritance</a></li>
         <li><a href="/security">Security</a></li>
         <li><a href="/stability">Stability</a></li>
+        <li><a href="/context">Context</a></li>
       </ol>
     </section>
 

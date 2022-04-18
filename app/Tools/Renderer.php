@@ -5,6 +5,7 @@ namespace App\Tools;
 use Illuminate\Support\Facades\Blade;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
+use Twig\Extension\DebugExtension;
 
 /**
  * Tester and Renderer tool.
@@ -17,11 +18,13 @@ class Renderer {
    * @param string $name
    *   Template name. Must be the same for Blade and Twig and reside in a
    *   corresponding folder.
+   * @param bool $is_debug
+   *   Whether to enable debug mode.
    *
    * @return array
    *   Operation result.
    */
-  public function renderItem($name) {
+  public function renderItem($name, $is_debug = FALSE) {
     $iterations = 999;
     $data = [
       'blade' => [],
@@ -52,6 +55,10 @@ class Renderer {
     $data['twig']['tpl'] = file_get_contents($tpl_path);
     $loader = new FilesystemLoader($twig_path);
     $env = new Environment($loader);
+    if ($is_debug) {
+      $env->enableDebug();
+      $env->addExtension(new DebugExtension());
+    }
     $src = $env->getLoader()->getSourceContext($twig_name);
     $data['twig']['php'] = $env->compileSource($src);
     $data['twig']['html'] = $env->render($twig_name);

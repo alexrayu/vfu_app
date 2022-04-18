@@ -54,3 +54,11 @@ Route::get('/stability', function () {
   $data['title'] = '6. Stability.';
   return view('test-container', $data);
 });
+
+// 7. Context.
+Route::get('/context', function () {
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('context', TRUE);
+  $data['title'] = '7. Context.';
+  return view('test-container', $data);
+});
