@@ -1,0 +1,22 @@
+{# Assigning or printing an empty or undeclared variable. #}
+{{ a }}
+
+{# Assigning or printing an empty or undeclared array key and object property. #}
+{% set a = [] %}
+{{ a[0] }}
+
+{# Operations on variables of different types. #}
+{% set a = 1 %}
+{% set b = '1' %}
+{{ a + b }}
+
+{# Empty and undeclared variables and keys in logic and control structures. #}
+{% if test == 5 %}
+{% endif %}
+
+{# Variables of wrong types in logic and control structures. #}
+{% set a = 1 %}
+{% set b = TRUE %}
+{% if (a + b == 2) %}
+<p>TRUE</p>
+{% endif %}

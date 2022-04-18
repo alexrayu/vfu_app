@@ -46,3 +46,11 @@ Route::get('/security', function () {
   $data['title'] = '5. Security.';
   return view('test-container', $data);
 });
+
+// 6. Stability.
+Route::get('/stability', function () {
+  $renderer = new Renderer();
+  $data = $renderer->renderItem('stability');
+  $data['title'] = '6. Stability.';
+  return view('test-container', $data);
+});
