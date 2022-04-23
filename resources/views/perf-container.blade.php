@@ -11,7 +11,7 @@
     <body>
     <main class="container">
       <h1>Oleksii Raiu - Blade and Twig performance test.</h1>
-      <p>This is a performance test. All templates are run in a loop of 100 iterations and summed.</p>
+      <p>This is a performance test. All templates are run in a loop of 100 iterations.</p>
       <p>Performance index is calculated by: <code>d = winner_time / loser_time</code></p>
 
       <section>
