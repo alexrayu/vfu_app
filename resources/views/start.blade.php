@@ -22,6 +22,7 @@
         <li><a href="/stability">Stability</a></li>
         <li><a href="/context">Context</a></li>
         <li><a href="/extendability">Extendability</a></li>
+        <li><a href="/ttl_performance">Performance sum-up</a></li>
       </ol>
     </section>
 

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Tools\Renderer;
+use App\Tools\PerfRenderer;
 
 Route::get('/', function () {
     return view('start');
@@ -69,4 +70,12 @@ Route::get('/extendability', function () {
   $data = $renderer->renderItem('extendability', TRUE);
   $data['title'] = '8. Extendability.';
   return view('test-container', $data);
+});
+
+// 9. Total Performance.
+Route::get('/ttl_performance', function () {
+  $renderer = new PerfRenderer();
+  $data = $renderer->getPerf();
+  $data['title'] = '9. Total Performance.';
+  return view('perf-container', $data);
 });
