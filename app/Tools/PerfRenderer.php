@@ -5,7 +5,6 @@ namespace App\Tools;
 use Illuminate\Support\Facades\Blade;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
-use Twig\Extension\DebugExtension;
 use App\Twig\CustomTwigExtension;
 
 /**
