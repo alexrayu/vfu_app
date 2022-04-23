@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
+use App\Twig\CustomTwigExtension;
 
 /**
  * Tester and Renderer tool.
@@ -58,6 +59,7 @@ class Renderer {
     if ($is_debug) {
       $env->enableDebug();
       $env->addExtension(new DebugExtension());
+      $env->addExtension(new CustomTwigExtension());
     }
     $src = $env->getLoader()->getSourceContext($twig_name);
     $data['twig']['php'] = $env->compileSource($src);
